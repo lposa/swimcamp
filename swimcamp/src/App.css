@@ -1,0 +1,156 @@
+:root {
+    --mainBlue: #2a2a72;
+    --lightBlue: #009ffd;
+    --mainWhite: #f3f3f3;
+    --mainDark: #232528;
+    --mainYellow: #ffa400;
+}
+
+body {
+    height: auto;
+    width: auto;
+}
+
+.footer {
+    background-color: var(--mainDark);
+    height: 3rem;
+}
+
+.buttonHome {
+    z-index: 999999;
+    text-transform: capitalize;
+    font-size: 2rem;
+    border: 0.05rem solid var(--lightBlue);
+    background-color: var(--lightBlue);
+    color: var(--mainDark);
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0.2rem 0.5rem 0.2rem 0;
+    transition: all 0.5s ease-in-out;
+    font-family: "Bebas Neue", cursive;
+}
+
+.buttonHome:hover {
+    transform: scale(1.1);
+    background-color: var(--mainDark);
+    color: var(--lightBlue);
+    border: 0.05rem solid var(--mainDark);
+}
+
+.buttonHome:focus {
+    outline: none;
+}
+
+#home-heading {
+    color: var(--mainDark);
+    background-color: var(--mainWhite);
+    font-size: 5rem;
+    font-family: "Bebas Neue", cursive;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.explore-container {
+    width: auto;
+    top: 40%;
+    left: 10%;
+}
+
+#navMenuItem:after {
+    transition: all ease-in-out 0.2s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+
+#navMenuItem:hover:after {
+    width: 100%;
+}
+
+
+/******OUR TEAM********/
+
+.generalContainer {
+    font-family: "Bebas Neue", cursive;
+    background-image: linear-gradient( to bottom right, var(--mainDark), var(--lightBlue), var(--mainBlue), var(--mainWhite));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.coach-container {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.coach-container h3 {
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.coach-container p {
+    font-size: 1.3rem;
+}
+
+.img-coach {
+    padding: 1rem 1rem;
+    border-radius: 50%;
+}
+
+
+/******CONTACT*****/
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.contact3 {
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+}
+
+.contact3 h1,
+.contact3 h2,
+.contact3 h3,
+.contact3 h4,
+.contact3 h5,
+.contact3 h6 {
+    color: #3e4555;
+}
+
+.contact3 .font-weight-medium {
+    font-weight: 500;
+}
+
+.contact3 .card-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.contact3 .btn-danger-gradiant {
+    background: #ff4d7e;
+    background: -webkit-linear-gradient( legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+    background: -webkit-gradient( linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+    background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+    background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+    background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+
+.contact3 .btn-danger-gradiant:hover {
+    background: #ff6a5b;
+    background: -webkit-linear-gradient( legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+    background: -webkit-gradient( linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+    background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+    background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+}
