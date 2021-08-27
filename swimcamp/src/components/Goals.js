@@ -11,7 +11,7 @@ function Goals({ goals }) {
     setCurrentTime(goals.pb);
     setGoalTime(goals.goal);
     setSwamTime(goals.lbs);
-  });
+  }, [goals.pb, goals.goal, goals.lbs]);
 
   return (
     <div className="container">

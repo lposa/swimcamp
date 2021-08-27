@@ -54,7 +54,7 @@ function UserPageTabs() {
       setSwimmerGoals(goals);
       return goals;
     });
-  }, [practice]);
+  }, [practices, swimmerGoalsDetails, practice, swimmerGoals]);
 
   return (
     <>
