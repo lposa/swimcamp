@@ -7,7 +7,7 @@ import Achievements from "./Achievements";
 
 function UserPageTabs() {
   const [activeTab, setActiveTab] = useState("about");
-  const [practice, setPractice] = useState([]);
+  const [practicee, setPractice] = useState([]);
   const [swimmerGoals, setSwimmerGoals] = useState([]);
 
   const practices = [
@@ -47,14 +47,14 @@ function UserPageTabs() {
   useEffect(() => {
     practices.map((practice) => {
       setPractice(practice);
-      return practice;
+      return practicee;
     });
 
     swimmerGoalsDetails.map((goals) => {
       setSwimmerGoals(goals);
-      return goals;
+      return swimmerGoals;
     });
-  }, [practices, swimmerGoalsDetails, practice, swimmerGoals]);
+  });
 
   return (
     <>
