@@ -45,17 +45,16 @@ function UserPageTabs() {
   ];
 
   useEffect(() => {
-    practices.map(
-      (practice) => {
-        setPractice(practice);
-      },
-      [practice]
-    );
+    practices.map((practice) => {
+      setPractice(practice);
+      return practice;
+    });
 
     swimmerGoalsDetails.map((goals) => {
       setSwimmerGoals(goals);
+      return goals;
     });
-  }, [swimmerGoals]);
+  }, [practice]);
 
   return (
     <>
