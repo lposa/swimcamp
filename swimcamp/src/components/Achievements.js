@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+
 import gold from "../images/Gold 1Small.png";
 import silver from "../images/Silver 1Small.png";
 import bronze from "../images/Bronze 1Bronze_Small.png";

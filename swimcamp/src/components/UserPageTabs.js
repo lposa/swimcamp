@@ -47,12 +47,14 @@ function UserPageTabs(props) {
   useEffect(() => {
     practices.map((practice) => {
       setPractice(practice);
+      return;
     });
 
     swimmerGoalsDetails.map((goals) => {
       setSwimmerGoals(goals);
+      return;
     });
-  }, []);
+  });
 
   return (
     <>
