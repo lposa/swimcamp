@@ -22,9 +22,9 @@ function Blog() {
   useEffect(() => {
     blogPosts.map((post) => {
       setBlog(post);
-      return post;
+      return blog;
     });
-  }, [blog]);
+  });
 
   return (
     <>

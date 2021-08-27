@@ -5,7 +5,7 @@ import Card from "./Card";
 import Goals from "./Goals";
 import Achievements from "./Achievements";
 
-function UserPageTabs(props) {
+function UserPageTabs() {
   const [activeTab, setActiveTab] = useState("about");
   const [practice, setPractice] = useState([]);
   const [swimmerGoals, setSwimmerGoals] = useState([]);
@@ -45,16 +45,17 @@ function UserPageTabs(props) {
   ];
 
   useEffect(() => {
-    practices.map((practice) => {
-      setPractice(practice);
-      return;
-    });
+    practices.map(
+      (practice) => {
+        setPractice(practice);
+      },
+      [practice]
+    );
 
     swimmerGoalsDetails.map((goals) => {
       setSwimmerGoals(goals);
-      return;
     });
-  });
+  }, [swimmerGoals]);
 
   return (
     <>
@@ -158,7 +159,6 @@ function UserPageTabs(props) {
 
           <div className={activeTab === "goals" ? "tab show goals" : "hidden"}>
             {swimmerGoalsDetails.map((goals) => {
-              console.log(goals);
               return <Goals goals={goals} />;
             })}
           </div>
