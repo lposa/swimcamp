@@ -10,7 +10,7 @@ import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650,
+    minWidth: 240,
   },
 });
 
@@ -37,7 +37,7 @@ export default function BasicTable() {
         boxShadow: "rgba(0, 0, 0, 0.5) 0px 3px 8px",
       }}
     >
-      <Table className={classes.table} aria-label="simple table">
+      <Table className={classes.table}>
         <TableHead>
           <TableRow>
             <TableCell>EVENT</TableCell>

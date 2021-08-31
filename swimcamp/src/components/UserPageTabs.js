@@ -57,8 +57,8 @@ function UserPageTabs() {
   });
 
   return (
-    <>
-      <div style={{ justifyContent: "center", display: "flex" }}>
+    <div>
+      <div className="user-tabs">
         <button
           onClick={() => setActiveTab("about")}
           className={
@@ -168,7 +168,7 @@ function UserPageTabs() {
             }
           >
             {practices.map((practice) => {
-              return <Card practice={practice} display="inline" />;
+              return <Card practice={practice} />;
             })}
           </div>
 
@@ -187,7 +187,7 @@ function UserPageTabs() {
           </div>
         </>
       }
-    </>
+    </div>
   );
 }
 

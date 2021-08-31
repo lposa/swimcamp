@@ -8,8 +8,9 @@
 
 html,
 .root,
+body,
 .App {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -183,6 +184,11 @@ body {
     min-height: 600px;
     z-index: 1;
     margin-bottom: 200px;
+}
+
+.user-tabs {
+    justify-content: center;
+    display: flex;
 }
 
 .test-img {
@@ -445,6 +451,223 @@ p {
 }
 
 .achievements-info {
+    display: flex;
     font-size: 16px;
     color: #009ffd;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/********MOBILE PHONES*******/
+
+
+/*****HOME PAGE*****/
+
+@media only screen and (max-width: 480px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--mainDark);
+        height: 3rem;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+    .buttonHome {
+        z-index: 999999;
+        text-transform: capitalize;
+        font-size: 2rem;
+        border: 0.05rem solid var(--lightBlue);
+        background-color: var(--lightBlue);
+        color: var(--mainDark);
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0.2rem 0.5rem 0.2rem 0;
+        transition: all 0.5s ease-in-out;
+        font-family: "Bebas Neue", cursive;
+    }
+    .home-image-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        text-align: center;
+        margin-bottom: 10px;
+        position: relative;
+        color: #009ffd;
+    }
+    #home-heading {
+        color: var(--mainDark);
+        background-color: var(--mainWhite);
+        font-size: 3rem;
+        font-family: "Bebas Neue", cursive;
+        background: rgba(255, 255, 255, 0.6);
+    }
+    .explore-container {
+        width: auto;
+        top: 40%;
+        left: 10%;
+    }
+    /******OURTEAM****/
+    .coach-container {
+        background: rgba(255, 255, 255, 0.5);
+        width: auto;
+        margin-top: 300px;
+        margin-right: 100px;
+    }
+    .coach-container h3 {
+        margin-top: 1rem;
+        text-decoration: underline;
+    }
+    .coach-container p {
+        font-size: 1.1rem;
+    }
+    .img-coach {
+        padding: 1rem 1rem;
+        border-radius: 50%;
+    }
+    .team-container {
+        background-color: #f3f3f3;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+        min-height: 600px;
+        z-index: 1;
+        margin-bottom: 200px;
+    }
+    /******user profile*****/
+    .user-container {
+        width: auto;
+    }
+    .about {
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        width: 300px;
+        display: grid;
+    }
+    .user-tabs {
+        display: grid;
+        grid-template-columns: 34% 34% 34%;
+        grid-template-rows: 50% 50%;
+        column-gap: 30px;
+        row-gap: 10px;
+    }
+    .tabs-button {
+        border: none;
+        padding: 9px;
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        min-width: 105px;
+        width: auto;
+        text-align: center;
+    }
+    .active {
+        background-color: #009ffd;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: ease-in-out 0.25s;
+    }
+    .goals-container {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+    }
+    /******practices****/
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-practices {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+        min-height: 3rem;
+        margin-bottom: 25px;
+        width: 300px;
+        transition: all 0.2s ease-in-out;
+    }
+    .card-practices:hover {
+        transform: scale(1.1);
+    }
+    .card-practices button {
+        border: 1px solid var(--lightBlue);
+        background-color: #009ffd;
+        width: 50%;
+        border-radius: 15px;
+        transform: translateX(50%);
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+        margin-bottom: 20px;
+    }
+    .feedback {
+        display: flex;
+        flex-direction: row;
+    }
+    .feedback-container {
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+        height: 7rem;
+        width: 400px;
+        margin-bottom: 10px;
+        transition: all 0.2s ease-in-out;
+    }
+    .feedback-container:hover {
+        transform: scale(1.1);
+    }
+    .feedback-container-quote {
+        display: flex;
+        flex-direction: row;
+    }
+    .feedback-text {
+        font-size: 10px;
+    }
+    .achievements-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        margin-bottom: 10px;
+        position: relative;
+        color: #009ffd;
+        transition: transform 3s;
+        transform-style: preserve-3d;
+    }
+    .achievements-content:hover {
+        transform: rotateY(0.5turn);
+    }
+    .achievements-container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-items: center;
+        justify-content: center;
+        column-gap: 3.5rem;
+        margin-bottom: 20px;
+    }
 }

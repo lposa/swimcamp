@@ -3,7 +3,7 @@ import somi from "../images/radisic.jpg";
 
 function CoachFeedback() {
   return (
-    <div className="container">
+    <div className="container feedback">
       <div className="feedback-container">
         <img
           src={somi}
@@ -13,11 +13,10 @@ function CoachFeedback() {
 
         <div className="feedback-container-quote">
           <i class="fas fa-quote-left"></i>
-          <p>
+          <p className="feedback-text">
             Leonard is one amazing athlete and a human being. He exelled in
             every aspect during this camp. He improved a lot, especially in his
-            technique. He is also a great team leader and worthy of being the
-            team captain. Others should look up to him.{" "}
+            technique.
           </p>
           <i class="fas fa-quote-right"></i>
         </div>

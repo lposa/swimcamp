@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
 
-        <img src={homeBackground} alt="home" className="img-fluid" />
+        <img src={homeBackground} alt="home" className="img-fluid home-image" />
       </div>
       <Footer />
     </>

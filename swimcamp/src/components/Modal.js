@@ -1,6 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
+import shell from "../images/Shell.png";
+import dolphin from "../images/Dolphin.png";
+import shark from "../images/Shark.png";
+import frog from "../images/Frog.png";
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -54,10 +58,22 @@ export default function SimpleModal() {
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <h2 id="simple-modal-title">Ranking information</h2>
-      <p id="simple-modal-description">0 - 1000 points Seashell</p>
-      <p id="simple-modal-description">1000 - 2000 points Froggie</p>
-      <p id="simple-modal-description">2000 - 3000 points Dolphin</p>
-      <p id="simple-modal-description">3000 - 4000 points Shark</p>
+      <div className="modal-info">
+        <p id="simple-modal-description">0 - 1000 points</p>
+        <img src={shell} alt="shell" />
+      </div>
+      <div className="modal-info">
+        <p id="simple-modal-description">1000 - 2000 points</p>
+        <img src={frog} alt="shell" />
+      </div>
+      <div className="modal-info">
+        <p id="simple-modal-description">2000 - 3000 points </p>
+        <img src={dolphin} alt="shell" />
+      </div>
+      <div className="modal-info">
+        <p id="simple-modal-description">3000 - 4000 points </p>
+        <img src={shark} alt="shell" />
+      </div>
     </div>
   );
 
