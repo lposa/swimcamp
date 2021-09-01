@@ -609,27 +609,30 @@ p {
         width: auto;
     }
     .about {
-        min-width: 400px;
+        min-width: 300px;
+        width: auto;
         display: grid;
+        margin: 0 auto;
     }
     .user-tabs {
         display: grid;
         grid-template-columns: 34% 34% 34%;
         grid-template-rows: 50% 50%;
-        column-gap: 40px;
+        column-gap: 60px;
         row-gap: 10px;
         justify-items: center;
+        width: auto;
     }
     .tabs-content {
         display: flex;
         justify-content: center;
+        width: auto;
     }
     .tabs-button {
         border: none;
         padding: 9px;
         background-color: #f3f3f3;
         border-radius: 10px;
-        min-width: 105px;
         width: auto;
         text-align: center;
     }
@@ -640,10 +643,55 @@ p {
     }
     .goals-container {
         display: grid;
-        grid-template-columns: 20% 60% 20%;
+        grid-template-columns: 33% 33% 33%;
         justify-content: center;
         align-items: center;
-        column-gap: 40px;
+        column-gap: 20px;
+        width: auto;
+    }
+    /*****progress bar*****/
+    .progressbar-container {
+        max-width: 500px;
+    }
+    .progressbar-container {
+        position: relative;
+        width: auto;
+        max-width: 100px;
+        height: 50px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .progressbar-complete {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        height: 100%;
+        background-color: var(--lightBlue);
+        border-radius: 10px;
+        animation: g 2500ms infinite ease-in-out;
+        z-index: 2;
+    }
+    .progressbar-liquid {
+        z-index: 1;
+        width: 70px;
+        height: 70px;
+        animation: g 2500ms infinite ease-in-out, r 3000ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+        position: absolute;
+        right: -5px;
+        top: -10px;
+        background-color: var(--lightBlue);
+        border-radius: 40%;
+    }
+    .progress {
+        z-index: 2;
+        background: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
     }
     /******practices****/
     .practices {
@@ -690,7 +738,8 @@ p {
         border-radius: 15px;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
         height: 7rem;
-        width: 400px;
+        max-width: 400px;
+        min-width: 200px;
         margin-bottom: 10px;
         transition: all 0.2s ease-in-out;
     }

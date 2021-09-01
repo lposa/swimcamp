@@ -14,7 +14,7 @@ function Goals({ goals }) {
   }, [goals.pb, goals.goal, goals.lbs]);
 
   return (
-    <div className="container">
+    <div className="container" style={{ width: "auto" }}>
       <h5 style={{ textAlign: "center" }}>
         {goals.event}
         <p>
@@ -23,8 +23,8 @@ function Goals({ goals }) {
       </h5>
       <div className="goals-container">
         <GlassDiv>
-          <h6 style={{ fontSize: "11px" }}>Last best swim</h6>
-          <p style={{ fontSize: "20px" }}>{swamTime}</p>
+          <SwimInfoHeader>Last best swim</SwimInfoHeader>
+          <SwimInfoText style={{ fontSize: "20px" }}>{swamTime}</SwimInfoText>
         </GlassDiv>
         <ProgressBar
           currentTime={currentTime}
@@ -32,8 +32,8 @@ function Goals({ goals }) {
           swamTime={swamTime}
         />
         <GlassDiv>
-          <h6 style={{ fontSize: "12px" }}>Goal</h6>
-          <p style={{ fontSize: "20px" }}>{goalTime}</p>
+          <SwimInfoHeader style={{ fontSize: "12px" }}>Goal</SwimInfoHeader>
+          <SwimInfoText style={{ fontSize: "20px" }}>{goalTime}</SwimInfoText>
         </GlassDiv>
       </div>
     </div>
@@ -58,6 +58,24 @@ const GlassDiv = styled.div`
   margin-bottom: 10px;
   overflow: hidden;
   color: #009ffd;
+
+  @media only screen and (max-width: 480px) {
+    width: 80px;
+    height: 80px;
+  }
 `;
 
+const SwimInfoHeader = styled.div`
+  font-size: 12px;
+  @media only screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+`;
+
+const SwimInfoText = styled.div`
+  font-size: 20px;
+  @media only screen and (max-width: 480px) {
+    font-size: 15px;
+  }
+`;
 export default Goals;
