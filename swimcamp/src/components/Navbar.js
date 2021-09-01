@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
+import posaprofil from "../images/posa.png";
 
 function Navbar() {
   return (
@@ -9,55 +10,80 @@ function Navbar() {
         className="navbar navbar-expand-lg navbar-light bg-dark "
         style={{ width: "100%", fontSize: "1.2rem" }}
       >
-        <div className="container-fluid">
+        <div className="container-fluid ">
           <img id="logo" src={logo} alt="logo goes here" />
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span
-              className="navbar-toggler-icon text-white"
-              style={{ color: "white" }}
-            ></span>
-          </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0 justify-content-center">
+          <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0 justify-content-center navbar-large-screen">
+            <li id="navMenuItem" className="nav-item px-3">
+              <Link to="/home" className="nav-link text-white">
+                HOME
+              </Link>
+            </li>
+            <li id="navMenuItem" className="nav-item px-3">
+              <Link to="/blog" className="nav-link text-white">
+                BLOG
+              </Link>
+            </li>
+            <li id="navMenuItem" className="nav-item px-3">
+              <Link to="/ourteam" className="nav-link text-white">
+                OUR TEAM
+              </Link>
+            </li>
+            <li id="navMenuItem" className="nav-item px-3">
+              <Link to="/contact" className="nav-link text-white">
+                CONTACT
+              </Link>
+            </li>
+          </ul>
+          <ul className="navbar-nav mx-auto justify-content-right navbar-large-screen">
+            <li id="navMenuItem" className="nav-item px-3">
+              <Link to="/profile" className="nav-link text-white">
+                Leonard Posa
+              </Link>
+            </li>
+            <li id="navMenuItem" className="nav-item px-3">
+              <Link to="/" className="nav-link text-white">
+                LOGIN/REGISTER
+              </Link>
+            </li>
+          </ul>
+
+          <div className="navbar-small-screen">
+            <ul className="navbar-nav ">
               <li id="navMenuItem" className="nav-item px-3">
                 <Link to="/home" className="nav-link text-white">
-                  HOME
+                  <i class="fas fa-home"></i>
                 </Link>
               </li>
               <li id="navMenuItem" className="nav-item px-3">
                 <Link to="/blog" className="nav-link text-white">
-                  BLOG
+                  <i class="fab fa-blogger"></i>
                 </Link>
               </li>
               <li id="navMenuItem" className="nav-item px-3">
                 <Link to="/ourteam" className="nav-link text-white">
-                  OUR TEAM
+                  <i class="fas fa-user-friends"></i>
                 </Link>
               </li>
               <li id="navMenuItem" className="nav-item px-3">
                 <Link to="/contact" className="nav-link text-white">
-                  CONTACT
+                  <i class="far fa-address-card"></i>
                 </Link>
               </li>
             </ul>
-            <ul className="navbar-nav mx-auto justify-content-right">
+            <ul className="navbar-nav mx-auto ">
               <li id="navMenuItem" className="nav-item px-3">
                 <Link to="/profile" className="nav-link text-white">
-                  Leonard Posa
+                  <img
+                    src={posaprofil}
+                    alt="posa"
+                    style={{ borderRadius: "50px", width: "35px" }}
+                  />
                 </Link>
               </li>
               <li id="navMenuItem" className="nav-item px-3">
                 <Link to="/" className="nav-link text-white">
-                  LOGIN/REGISTER
+                  <i class="fas fa-sign-in-alt"></i>
                 </Link>
               </li>
             </ul>

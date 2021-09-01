@@ -97,6 +97,10 @@ body {
     width: 100%;
 }
 
+.navbar-small-screen {
+    display: none;
+}
+
 
 /******OUR TEAM********/
 
@@ -471,6 +475,37 @@ p {
 /*****HOME PAGE*****/
 
 @media only screen and (max-width: 480px) {
+    .navbar-large-screen {
+        display: none;
+    }
+    .navbar-small-screen {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+    }
+    .navbar-small-screen ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-small-screen li {
+        border-radius: 100%;
+        transition: 2s;
+    }
+    #navMenuItem:after {
+        transition: all ease-in-out 0.2s;
+        background: none repeat scroll 0 0 #ffffff;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+    }
+    #navMenuItem:hover:after {
+        width: 100%;
+    }
     .footer {
         display: flex;
         flex-direction: row;
@@ -512,11 +547,30 @@ p {
         font-size: 3rem;
         font-family: "Bebas Neue", cursive;
         background: rgba(255, 255, 255, 0.6);
+        text-align: center;
     }
     .explore-container {
         width: auto;
         top: 40%;
         left: 10%;
+    }
+    .home-large {
+        display: none;
+    }
+    .home-small {
+        background-color: #f3f3f3;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        min-height: 600px;
+        z-index: 1;
+    }
+    .home-image {
+        filter: brightness(50%);
     }
     /******OURTEAM****/
     .coach-container {
