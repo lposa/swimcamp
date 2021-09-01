@@ -5,7 +5,7 @@ function ImageSlider() {
   return (
     <>
       {SliderData.map((slide, index) => {
-        return <img src={slide.image} alt="image" />;
+        return <img src={slide.image} alt="sliderpicture" />;
       })}
     </>
   );

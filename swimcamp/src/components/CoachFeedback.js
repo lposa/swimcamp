@@ -3,7 +3,7 @@ import somi from "../images/radisic.jpg";
 
 function CoachFeedback() {
   return (
-    <div className="container feedback">
+    <>
       <div className="feedback-container">
         <img
           src={somi}
@@ -21,7 +21,7 @@ function CoachFeedback() {
           <i class="fas fa-quote-right"></i>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

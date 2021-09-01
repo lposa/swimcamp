@@ -15,7 +15,7 @@ function OurTeam() {
       <div className="team-container">
         <Carousel>
           <div className="img-container">
-            <img src={posa} className="img-coach" />
+            <img src={posa} className="img-coach" alt="coach" />
             <p className="legend">
               Coach Leonard has been swimming for about 20 years already. He was
               a multiple national champion, from junior all the way to the
@@ -31,7 +31,7 @@ function OurTeam() {
             </p>
           </div>
           <div className="img-container">
-            <img src={petras} className="img-coach" />
+            <img src={petras} className="img-coach" alt="coach" />
             <div className="coach-container">
               <p className="legend">
                 Coach Vladimir is one of the clubs best flyers. He started
@@ -46,7 +46,7 @@ function OurTeam() {
             </div>
           </div>
           <div className="img-container">
-            <img src={vujin} className="img-coach" />
+            <img src={vujin} className="img-coach" alt="coach" />
             <p className="legend">
               {" "}
               Coach Marko has been swimming for about 9 years already. He was a
@@ -60,7 +60,7 @@ function OurTeam() {
             </p>
           </div>
           <div className="img-container">
-            <img src={acin} className="img-coach" />
+            <img src={acin} className="img-coach" alt="coach" />
             <p className="legend">
               Coach Nikola is one of the clubs and countries best swimmers. He
               started swimming at a very early age. He started as a backstroker,

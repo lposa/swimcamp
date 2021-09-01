@@ -23,6 +23,9 @@ export const MutedLink = styled.a `
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
+  @media only screen and (max-width: 480px) {
+    font-size: 13px;
+  }
 `;
 
 export const BoldLink = styled.a `
@@ -31,6 +34,9 @@ export const BoldLink = styled.a `
   font-weight: 500;
   text-decoration: none;
   margin: 0 4px;
+  @media only screen and (max-width: 480px) {
+    font-size: 13px;
+  }
 `;
 
 export const Input = styled.input `
@@ -51,6 +57,9 @@ export const Input = styled.input `
   &:focus {
     outline: none;
     border-bottom: 2px solid rgb(241, 196, 15);
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 15px;
   }
 `;
 

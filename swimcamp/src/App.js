@@ -6,14 +6,13 @@ import OurTeam from "./components/OurTeam";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import { AccountBox } from "./components/accountBox";
-import Test from "./components/Test";
+
 import UserMenu from "./components/UserMenu";
 
 function App() {
   return (
     <>
       <Switch>
-        <Route path="/test" component={Test} />
         <Route exact path="/" component={AccountBox} />
         <Route path="/profile" component={UserMenu} />
         <Route exact path="/home" component={Home} />

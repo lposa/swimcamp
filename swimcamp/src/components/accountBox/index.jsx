@@ -17,7 +17,12 @@ const BoxContainer = styled.div`
   box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
   position: relative;
   overflow: hidden;
-  top: 30%;
+
+  @media only screen and (max-width: 480px) {
+    width: 300px;
+    height: 600px;
+    top: -20%;
+  }
 `;
 
 const TopContainer = styled.div`
@@ -65,6 +70,9 @@ const SmallText = styled.h5`
   z-index: 10;
   margin: 0;
   margin-top: 7px;
+  @media only screen and (max-width: 480px) {
+    font-size: 13px;
+  }
 `;
 
 const InnerContainer = styled.div`
@@ -139,8 +147,8 @@ export function AccountBox(props) {
                 src={grb}
                 alt="grb"
               />
-              <HeaderText> Welcome </HeaderText> <HeaderText> Back </HeaderText>{" "}
-              <SmallText> Please sign in to continue </SmallText>{" "}
+              <HeaderText> Welcome </HeaderText> <HeaderText> Back </HeaderText>
+              <SmallText> Please sign in to continue </SmallText>
             </HeaderContainer>
           )}
           {active === "signup" && (

@@ -57,7 +57,7 @@ function UserPageTabs() {
   });
 
   return (
-    <div>
+    <div className="container">
       <div className="user-tabs">
         <button
           onClick={() => setActiveTab("about")}
@@ -133,7 +133,7 @@ function UserPageTabs() {
       </div>
 
       {
-        <>
+        <div className="tabs-content">
           <div
             className={activeTab === "about" ? "tab show about" : "hidden"}
             style={{ marginTop: "30px" }}
@@ -185,7 +185,7 @@ function UserPageTabs() {
           >
             <Achievements />
           </div>
-        </>
+        </div>
       }
     </div>
   );
