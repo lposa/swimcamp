@@ -3,9 +3,7 @@ import gold from "../images/Gold 1Small.png";
 import silver from "../images/Silver 1Small.png";
 import bronze from "../images/Bronze 1Bronze_Small.png";
 import shell from "../images/Shell.png";
-import dolphin from "../images/Dolphin.png";
-import shark from "../images/Shark.png";
-import frog from "../images/Frog.png";
+
 import Modal from "./Modal";
 
 function Achievements() {
