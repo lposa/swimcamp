@@ -9,6 +9,7 @@ function CoachFeedback() {
           src={somi}
           alt="somi"
           style={{ borderRadius: "50%", margin: "10px 10px" }}
+          className="img-fluid"
         />
 
         <div className="feedback-container-quote">

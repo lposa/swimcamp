@@ -468,6 +468,10 @@ p {
     align-items: center;
 }
 
+.home-small {
+    display: none;
+}
+
 
 /********MOBILE PHONES*******/
 
@@ -475,6 +479,20 @@ p {
 /*****HOME PAGE*****/
 
 @media only screen and (max-width: 480px) {
+    html,
+    .root,
+    body,
+    .App {
+        height: 100vh;
+    }
+    body {
+        width: auto;
+        position: relative;
+        margin: 0;
+        background-image: linear-gradient( to bottom right, var(--mainDark), var(--lightBlue), var(--mainBlue), var(--mainWhite));
+        background-size: 600% 600%;
+        animation: gradient 10s ease infinite;
+    }
     .navbar-large-screen {
         display: none;
     }
@@ -482,10 +500,9 @@ p {
         display: flex;
         flex-direction: row;
         justify-items: center;
-        justify-self: center;
-        justify-content: center;
         align-items: center;
         column-gap: 50px;
+        width: 100%;
     }
     .navbar-small-screen ul {
         display: flex;
@@ -505,6 +522,10 @@ p {
     }
     #navMenuItem:hover:after {
         width: 100%;
+    }
+    #logo {
+        width: 300px;
+        height: auto;
     }
     .footer {
         display: flex;
@@ -607,12 +628,13 @@ p {
     /******user profile*****/
     .user-container {
         width: auto;
+        margin-bottom: 50px;
     }
     .about {
         min-width: 300px;
         width: auto;
         display: grid;
-        margin: 0 auto;
+        margin-top: 15px;
     }
     .user-tabs {
         display: grid;
@@ -724,21 +746,21 @@ p {
         box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
         margin-bottom: 20px;
     }
+    /****COACH FEEDBACK******/
     .feedback {
         display: flex;
         flex-direction: column;
         justify-items: center;
         justify-content: center;
         justify-self: center;
-        width: auto;
     }
     .feedback-container {
         display: flex;
         flex-direction: row;
         border-radius: 15px;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
-        height: 7rem;
-        max-width: 400px;
+        height: 9rem;
+        width: 300px;
         min-width: 200px;
         margin-bottom: 10px;
         transition: all 0.2s ease-in-out;
@@ -749,9 +771,11 @@ p {
     .feedback-container-quote {
         display: flex;
         flex-direction: row;
+        font-size: 2vw;
+        width: auto;
     }
     .feedback-text {
-        font-size: 10px;
+        font-size: 2vw;
     }
     .achievements-content {
         display: flex;
