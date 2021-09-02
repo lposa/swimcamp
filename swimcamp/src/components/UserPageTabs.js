@@ -29,6 +29,7 @@ function UserPageTabs() {
 
   const swimmerGoalsDetails = [
     {
+      key: 0,
       name: "Leonard Posa",
       event: "50 free",
       pb: "23.6",
@@ -36,6 +37,7 @@ function UserPageTabs() {
       goal: "22.6",
     },
     {
+      key: 1,
       name: "Leonard Posa",
       event: "50 breast",
       pb: "29.1",
@@ -43,7 +45,6 @@ function UserPageTabs() {
       goal: "27.99",
     },
   ];
-
   useEffect(() => {
     practices.map((practice) => {
       setPractice(practice);
@@ -54,7 +55,7 @@ function UserPageTabs() {
       setSwimmerGoals(goals);
       return swimmerGoals;
     });
-  });
+  }, [activeTab]);
 
   return (
     <div className="container">
@@ -76,7 +77,7 @@ function UserPageTabs() {
             activeTab === "pb" ? "tabs-button active" : "tabs-button deactive"
           }
         >
-          <i class="fas fa-trophy"></i>
+          <i className="fas fa-trophy"></i>
           <p>
             Personal
             <br />
@@ -91,7 +92,7 @@ function UserPageTabs() {
               : "tabs-button deactive"
           }
         >
-          <i class="fas fa-bullseye"></i>
+          <i className="fas fa-bullseye"></i>
           <p>Goals</p>
         </button>
         <button
@@ -113,7 +114,7 @@ function UserPageTabs() {
               : "tabs-button deactive"
           }
         >
-          <i class="far fa-comment-dots"></i>
+          <i className="far fa-comment-dots"></i>
           <p>
             Coach <br />
             Feedback
@@ -127,7 +128,7 @@ function UserPageTabs() {
               : "tabs-button deactive"
           }
         >
-          <i class="far fa-star"></i>
+          <i className="far fa-star"></i>
           <p>Achievements</p>
         </button>
       </div>
@@ -158,7 +159,7 @@ function UserPageTabs() {
 
           <div className={activeTab === "goals" ? "tab show goals" : "hidden"}>
             {swimmerGoalsDetails.map((goals) => {
-              return <Goals goals={goals} />;
+              return <Goals key={goals.key} goals={goals} />;
             })}
           </div>
 
@@ -168,7 +169,7 @@ function UserPageTabs() {
             }
           >
             {practices.map((practice) => {
-              return <Card practice={practice} />;
+              return <Card key={practice.title} practice={practice} />;
             })}
           </div>
 

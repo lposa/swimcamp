@@ -51,22 +51,22 @@ function Navbar() {
           <ul className="navbar-nav ">
             <li id="navMenuItem" className="nav-item px-2">
               <Link to="/home" className="nav-link text-white">
-                <i class="fas fa-home"></i>
+                <i className="fas fa-home"></i>
               </Link>
             </li>
             <li id="navMenuItem" className="nav-item px-2">
               <Link to="/blog" className="nav-link text-white">
-                <i class="fab fa-blogger"></i>
+                <i className="fab fa-blogger"></i>
               </Link>
             </li>
             <li id="navMenuItem" className="nav-item px-2">
               <Link to="/ourteam" className="nav-link text-white">
-                <i class="fas fa-user-friends"></i>
+                <i className="fas fa-user-friends"></i>
               </Link>
             </li>
             <li id="navMenuItem" className="nav-item px-2">
               <Link to="/contact" className="nav-link text-white">
-                <i class="far fa-address-card"></i>
+                <i className="far fa-address-card"></i>
               </Link>
             </li>
           </ul>
@@ -82,7 +82,7 @@ function Navbar() {
             </li>
             <li id="navMenuItem" className="nav-item px-2">
               <Link to="/" className="nav-link text-white">
-                <i class="fas fa-sign-in-alt"></i>
+                <i className="fas fa-sign-in-alt"></i>
               </Link>
             </li>
           </ul>

@@ -13,13 +13,13 @@ function CoachFeedback() {
         />
 
         <div className="feedback-container-quote">
-          <i class="fas fa-quote-left"></i>
+          <i className="fas fa-quote-left"></i>
           <p className="feedback-text">
             Leonard is one amazing athlete and a human being. He exelled in
             every aspect during this camp. He improved a lot, especially in his
             technique.
           </p>
-          <i class="fas fa-quote-right"></i>
+          <i className="fas fa-quote-right"></i>
         </div>
       </div>
     </>
