@@ -146,6 +146,7 @@ export function AccountBox(props) {
                 style={{ zIndex: "10000", width: "100px" }}
                 src={grb}
                 alt="grb"
+                className="login-logo"
               />
               <HeaderText> Welcome </HeaderText> <HeaderText> Back </HeaderText>
               <SmallText> Please sign in to continue </SmallText>
@@ -157,6 +158,7 @@ export function AccountBox(props) {
                 style={{ zIndex: "10000", width: "100px" }}
                 src={grb}
                 alt="grb"
+                className="login-logo"
               />
               <HeaderText> Welcome </HeaderText>
               <SmallText> Please sign up to continue </SmallText>

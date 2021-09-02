@@ -807,9 +807,10 @@ p {
         column-gap: 1rem;
         margin-bottom: 20px;
     }
-    @media (prefers-color-scheme: dark) {
-        #logo {
-            filter: brightness(50%);
-        }
+}
+
+@media (prefers-color-scheme: dark) {
+    #logo {
+        filter: brightness(50%);
     }
 }
