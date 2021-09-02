@@ -55,7 +55,7 @@ function UserPageTabs() {
       setSwimmerGoals(goals);
       return swimmerGoals;
     });
-  }, [activeTab]);
+  }, [practicee, swimmerGoals, activeTab]);
 
   return (
     <div className="container">
