@@ -837,6 +837,16 @@ p {
         column-gap: 1rem;
         margin-bottom: 20px;
     }
+    /*blog mobile*/
+    .blog-mobile {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    /***CONTACT**/
+    .contact-column {
+        width: auto;
+    }
 }
 
 @media (prefers-color-scheme: dark) {

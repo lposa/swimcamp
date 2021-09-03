@@ -20,7 +20,10 @@ export default function MediaCard({ blogTitle, blogText, blogPic }) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card
+      className={classes.root}
+      style={{ boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)" }}
+    >
       <CardActionArea>
         <CardMedia
           className={classes.media}
