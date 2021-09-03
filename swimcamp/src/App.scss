@@ -104,26 +104,43 @@ body {
 
 /******OUR TEAM********/
 
-.coach-container {
-    background: rgba(255, 255, 255, 0.5);
-}
-
-.coach-container h3 {
-    margin-top: 1rem;
-    text-decoration: underline;
-}
-
-.coach-container p {
-    font-size: 1.3rem;
-}
-
 .img-coach {
     padding: 1rem 1rem;
     border-radius: 50%;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 .img-container {
-    display: table-row;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.team-container {
+    background-color: #f3f3f3;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    min-height: 600px;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+
+.coach-description {
+    position: relative;
+    font-size: 12px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+    margin-right: 20px;
 }
 
 
@@ -594,36 +611,49 @@ p {
         filter: brightness(50%);
     }
     /******OURTEAM****/
-    .coach-container {
-        background: rgba(255, 255, 255, 0.5);
-        width: auto;
-        margin-top: 300px;
-        margin-right: 100px;
-    }
-    .coach-container h3 {
-        margin-top: 1rem;
-        text-decoration: underline;
-    }
-    .coach-container p {
-        font-size: 1.1rem;
-    }
     .img-coach {
-        padding: 1rem 1rem;
         border-radius: 50%;
+        width: 100%;
+        transition: transform 3s;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        justify-self: center;
+    }
+    .img-container {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        align-content: center;
+        align-items: center;
+        transition: transform 3s;
+        transform-style: preserve-3d;
+    }
+    .img-container:hover {
+        transform: rotateX(0.5turn);
     }
     .team-container {
         background-color: #f3f3f3;
         position: relative;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10rem;
+        margin-top: 5rem;
         min-height: 600px;
         z-index: 1;
-        margin-bottom: 200px;
+        margin-bottom: 100px;
+    }
+    .coach-description {
+        position: absolute;
+        transform: rotateX(0.5turn);
+        font-size: 3vw;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        transition: transform 3s;
+        margin-left: 5px;
+    }
+    .coach-description:hover {
+        transform: rotateX(0.5turn);
     }
     /******user profile*****/
     .user-container {
